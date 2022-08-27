@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f9ffff;
+    font-family: inherit;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #020712;
+    font-family: 'Poppins', sans-serif;
+}
+
+.scrollbar {
+    @apply pb-8;
+}
+
+.scrollbar::-webkit-scrollbar {
+    @apply w-6 h-6 bg-transparent;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-full;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-sky-600 bg-clip-padding rounded-full border-solid border-8 border-transparent;
+}
